@@ -1,0 +1,25 @@
+
+.acpl-icon-with-attribute {
+  display: inline;
+  column-gap: 8px;
+
+  & > .acpl-icon {
+    margin-bottom: -2px;
+    width: 1em;
+    height: 1em;
+
+    
+  }
+
+  &.left {
+    & > .acpl-icon {
+      margin-right: 8px;
+    }
+  }
+
+  &.right {
+    & > .acpl-icon {
+      margin-left: 8px;
+    }
+  }
+}

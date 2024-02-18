@@ -1,0 +1,127 @@
+{
+  "name": "deep-control-reproduction",
+  "version": "1.2.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "Web Solutions",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist-npm/index.d.ts",
+        "default": "./dist-npm/index.mjs"
+      },
+      "require": {
+        "types": "./dist-npm/index.d.ts",
+        "default": "./dist-npm/index.js"
+      }
+    },
+    "./dist-npm/style.css": "./dist-npm/style.css",
+    "./style.css": "./dist-npm/style.css",
+    "./index.d.ts": "./dist-npm/index.d.ts"
+  },
+  "main": "./dist-npm/index.js",
+  "module": "./dist-npm/index.mjs",
+  "types": "./index.d.ts",
+  "files": [
+    "dist-npm"
+  ],
+  "scripts": {
+    "dev": "storybook dev"
+    },
+  "browserslist": [
+    "last 3 versions",
+    "iOS >= 12"
+  ],
+  "devDependencies": {
+    "@mdx-js/react": "^2.3.0",
+    "@storybook/addon-a11y": "7.6.14",
+    "@storybook/addon-actions": "7.6.14",
+    "@storybook/addon-docs": "7.6.14",
+    "@storybook/addon-essentials": "7.6.14",
+    "@storybook/addon-interactions": "7.6.14",
+    "@storybook/addon-links": "7.6.14",
+    "@storybook/addons": "7.6.14",
+    "@storybook/api": "7.6.14",
+    "@storybook/blocks": "7.6.14",
+    "@storybook/channels": "7.6.14",
+    "@storybook/components": "7.6.14",
+    "@storybook/core-common": "7.6.14",
+    "@storybook/core-events": "7.6.14",
+    "@storybook/csf-tools": "7.6.14",
+    "@storybook/jest": "^0.2.3",
+    "@storybook/manager-api": "7.6.14",
+    "@storybook/node-logger": "7.6.14",
+    "@storybook/preview-api": "7.6.14",
+    "@storybook/react": "7.6.14",
+    "@storybook/react-vite": "7.6.14",
+    "@storybook/test-runner": "^0.16.0",
+    "@storybook/testing-library": "^0.2.2",
+    "@storybook/theming": "7.6.14",
+    "@storybook/types": "7.6.14",
+    "@types/lodash": "^4.14.200",
+    "@types/luxon": "^3.3.3",
+    "@types/mdx": "^2.0.10",
+    "@types/react": "^18.2.29",
+    "@types/react-dom": "^18.2.14",
+    "@types/react-router-dom": "^5.3.3",
+    "@vitejs/plugin-react": "^4.1.0",
+    "classnames": "^2.3.2",
+    "lodash": "^4.17.21",
+    "luxon": "^3.4.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.69.4",
+    "storybook": "7.6.14",
+    "storybook-addon-deep-controls": "^0.5.0",
+    "storybook-addon-pseudo-states": "^2.1.2",
+    "storybook-addon-themes": "^6.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3",
+    "vite": "^4.5.2",
+    "vite-plugin-dts": "^3.7.0"
+  },
+  "peerDependencies": {
+    "@googlemaps/markerclusterer": "^2.5.0",
+    "@googlemaps/react-wrapper": "^1.1.35",
+    "@vidstack/react": "1.5.1",
+    "axios": "^1.6.5",
+    "file-saver": "^2.0.5",
+    "html-react-parser": "^3.0.16",
+    "jszip": "^3.10.1",
+    "lodash": "^4.17.21",
+    "luxon": "^3.4.3",
+    "react": "16.6 - 18.X",
+    "react-dom": "16.6 - 18.X",
+    "react-router-dom": "^5.3.4",
+    "sanitize-html": "^2.11.0"
+  },
+  "packageManager": "pnpm@8.12.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "pnpm": {
+    "overrides": {
+      "storybook-addon-themes>@storybook/addons": "$@storybook/addons",
+      "storybook-addon-themes>@storybook/api": "$@storybook/api",
+      "storybook-addon-themes>@storybook/components": "$@storybook/components",
+      "storybook-addon-themes>@storybook/core-events": "$@storybook/core-events",
+      "storybook-addon-themes>@storybook/theming": "$@storybook/theming",
+      "@storybook/test-runner>@storybook/core-events": "$@storybook/core-events",
+      "@storybook/test-runner>@storybook/csf-tools": "$@storybook/csf-tools",
+      "@storybook/test-runner>@storybook/node-logger": "$@storybook/node-logger",
+      "@storybook/test-runner>@storybook/core-common": "$@storybook/core-common",
+      "@storybook/test-runner>@storybook/channels": "$@storybook/channels",
+      "@storybook/test-runner>@storybook/types": "$@storybook/types",
+      "@mdx-js/react": "$@mdx-js/react",
+      "@adobe/css-tools@<4.3.2": ">=4.3.2",
+      "follow-redirects@<1.15.4": ">=1.15.4"
+    },
+    "auditConfig": {
+      "ignoreCves": [
+        "# Added 2024-02-13 - until https://github.com/indutny/node-ip/pull/138 is resolved and a new version is produced",
+        "CVE-2023-42282"
+      ]
+    }
+  }
+}

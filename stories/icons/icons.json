@@ -1,0 +1,30 @@
+{
+    "icons": [
+        {
+            "title": "Circle",
+            "cssClass": "circle"
+        },
+    
+        {
+            "title": "Weather Cloud",
+            "cssClass": "weather-cloud"
+        },
+        {
+            "title": "Weather Rain",
+            "cssClass": "weather-rain"
+        },
+        {
+            "title": "Weather Sunny",
+            "cssClass": "weather-sunny"
+        },
+        {
+            "title": "Weather Sunset",
+            "cssClass": "weather-sunset"
+        },
+        {
+            "title": "Weather Wind",
+            "cssClass": "weather-wind"
+        }
+    
+    ]
+}

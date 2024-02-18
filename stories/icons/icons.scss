@@ -1,0 +1,92 @@
+$color: #6587df;
+
+.acpl-icon-circled{
+    display: flex;
+    width: fit-content;
+    border: 1px solid var(--color-icon-border, var(--color-icon-default, $color));
+    border-radius: 50%;
+    padding:10px;
+}
+
+.acpl-icon-boxed{
+    display: flex;
+    width: fit-content;
+    border: 1px solid var(--color-icon-border, var(--color-icon-default, $color));
+}
+
+
+i.acpl-icon {
+	display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    &.inline {
+        //Will match the surrounding font size. 
+        width:1em;
+        height:1em;
+    }
+      
+    &.rot-90{
+        transform:rotate(90deg);
+    }
+
+    &.rot-180{
+        transform:rotate(180deg);
+    }
+
+    &.rot-270{
+        transform:rotate(270deg);
+    }
+
+
+    &.circle{
+      background: var(--color-icon-default, $color);
+      mask-size: contain;
+      -webkit-mask-size: contain;
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat : no-repeat;
+      mask-image: url('./icons/circle.svg');
+      -webkit-mask-image: url('./icons/circle.svg');    }
+      &.weather-cloud{
+        background: var(--color-icon-default, $color);
+        mask-size: contain;
+        -webkit-mask-size: contain;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat : no-repeat;
+        mask-image: url('./icons/weather-cloud.svg');
+        -webkit-mask-image: url('./icons/weather-cloud.svg');    }
+    &.weather-rain{
+        background: var(--color-icon-default, $color);
+        mask-size: contain;
+        -webkit-mask-size: contain;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat : no-repeat;
+        mask-image: url('./icons/weather-rain.svg');
+        -webkit-mask-image: url('./icons/weather-rain.svg');    }
+    &.weather-sunny{
+        background: var(--color-icon-default, $color);
+        mask-size: contain;
+        -webkit-mask-size: contain;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat : no-repeat;
+        mask-image: url('./icons/weather-sunny.svg');
+        -webkit-mask-image: url('./icons/weather-sunny.svg');    }
+    &.weather-sunset{
+        background: var(--color-icon-default, $color);
+        mask-size: contain;
+        -webkit-mask-size: contain;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat : no-repeat;
+        mask-image: url('./icons/weather-sunset.svg');
+        -webkit-mask-image: url('./icons/weather-sunset.svg');    }
+    &.weather-wind{
+        background: var(--color-icon-default, $color);
+        mask-size: contain;
+        -webkit-mask-size: contain;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat : no-repeat;
+        mask-image: url('./icons/weather-wind.svg');
+        -webkit-mask-image: url('./icons/weather-wind.svg');    }
+
+      
+}
